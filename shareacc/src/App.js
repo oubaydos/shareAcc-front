@@ -1,19 +1,12 @@
 import NavbarUnauthenticated from "./components/NavbarUnauthenticated/NavbarUnauthenticated";
+
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "@fontsource/space-grotesk"; // Defaults to weight 400.
-import backgroundImage from "./res/images/background_image.jpg";
+import getRoutes from "./routes"
+import { Helmet } from "react-helmet";
 
-const styles = {
-  appBody: {
-    minHeight: "100vh",
-    backgroundColor: "rgba(255, 255, 255,0.5)",
-    backgroundImage: `url(${backgroundImage})`,
-    backgroundPosition: "top",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    boxShadow: "inset 0 0 0 1000px rgba(0,0,0,.5)",
-  },
-};
+import { BrowserRouter as Router } from "react-router-dom";
+
 
 const theme = createTheme({
   typography: {
@@ -39,8 +32,19 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <NavbarUnauthenticated/>
-      <div style={styles.appBody}></div>
+        <div className="App">
+          <Helmet>
+            <title>DevOpsify</title>
+          </Helmet>
+
+          <Router>
+            <div className="body">
+              <NavbarUnauthenticated />
+              {getRoutes("GUEST")}
+              {/* <Footer /> */}
+            </div>
+          </Router>
+        </div>
     </ThemeProvider>
   );
 }
