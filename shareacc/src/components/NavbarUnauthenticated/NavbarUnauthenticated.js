@@ -39,7 +39,7 @@ const NavbarUnauthenticated = () => {
 const logoView = <img src={logo} alt="logo" height="24" width="24" style={{font:"#006D77"}}/>
 
   return (
-    <AppBar position="absolute" color="common" variant="white" >
+    <AppBar position="sticky" color="common" variant="white" >
       <Container maxWidth="xl">
         <Toolbar disableGutters style={styles.customizeToolbar}>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>

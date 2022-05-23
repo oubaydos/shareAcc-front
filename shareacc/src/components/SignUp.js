@@ -14,6 +14,8 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import backgroundImage from "../res/images/background_image.jpg";
 import Paper from "@mui/material/Paper";
+import signup from "../api/signupApi"
+
 
 function Copyright(props) {
   return (
@@ -49,6 +51,7 @@ export default function SignUp() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
+    signup(data)
     console.log({
       email: data.get("email"),
       password: data.get("password"),
@@ -123,6 +126,17 @@ export default function SignUp() {
                       label="Last Name"
                       name="lastName"
                       autoComplete="family-name"
+                    />
+                  </Grid>
+
+                  <Grid item xs={12}>
+                    <TextField
+                      required
+                      fullWidth
+                      id="username"
+                      label="Username"
+                      name="username"
+                      autoComplete="username"
                     />
                   </Grid>
                   <Grid item xs={12}>

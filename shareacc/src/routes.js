@@ -2,7 +2,7 @@ import { useRoutes } from "react-router-dom";
 import SignIn from "./components/SignIn"
 import SignUp from "./components/SignUp"
 import Home from "./components/Home"
-import Details from "./components/SubscriptionDetails/index"
+import Main from "./components/OfferList"
 
 const ContributorRoutes = () => useRoutes([]);
 const GuestRoutes = () =>
@@ -10,7 +10,7 @@ const GuestRoutes = () =>
     { path: "/", element: <Home /> },
     { path: "/login", element: <SignIn /> },
     { path: "/signup", element: <SignUp /> },
-    { path: "/details", element: <Details /> },
+    { path: "/offer", element: <Main /> },
   ]);
 const AdminRoutes = () => useRoutes([]);
 
