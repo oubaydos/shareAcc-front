@@ -112,7 +112,7 @@ const logoView = <img src={logo} alt="logo" height="24" width="24" style={{font:
               </Typography>
           </Box>
 
-          <Button sx={{ flexGrow: 1, my: 2, color: "black", display: "block" }}>
+          <Button sx={{ flexGrow: 1, my: 2, color: "black", display: "block" }} href="/login">
             Log in
           </Button>
           <Button
@@ -121,8 +121,9 @@ const logoView = <img src={logo} alt="logo" height="24" width="24" style={{font:
               my: 2,
               display: "block",
               backgroundColor: "#006D77",
-              color: "white",
+              color: "white"
             }}
+            href="/signup"
           >
             Try now for free
           </Button>
