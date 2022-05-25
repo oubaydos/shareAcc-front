@@ -1,10 +1,10 @@
 
-import "../res/css/shareSubscription.css";
+import "../../res/css/shareSubscription.css";
 import { Link } from "react-router-dom";
 import {useState} from "react";
 import React from "react"
-import {importAll} from "../utils/utils";
-const images = importAll(require.context("../res/images/", false, /\.(png|jpe?g|svg)$/));
+import {importAll} from "../../utils/utils";
+const images = importAll(require.context("../../res/images/", false, /\.(png|jpe?g|svg)$/));
 
 const ShareSubscription = () => {
     const [radioButtons] = useState({
@@ -84,8 +84,10 @@ const ShareSubscription = () => {
                             <div
                                 data-modal="suggest-service"
                                 className="btn-greenn inline-block btn-suggest modal-trigger"
+
                             >
-                                Contact Us
+                                <div style={{color:"#000000"}}>Contact Us</div>
+
                             </div>
                         </Link>
                     </div>
