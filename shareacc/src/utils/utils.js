@@ -39,3 +39,9 @@ export function setCookie(name,value,days) {
 export function removeCookie(name) {
     document.cookie = name+'=; Max-Age=-99999999;';
 }
+
+export function importAll(r) {
+    let images = {};
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    return images;
+}

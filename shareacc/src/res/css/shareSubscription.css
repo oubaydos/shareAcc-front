@@ -1,0 +1,205 @@
+.text-center {
+    text-align: center;
+    margin-top: 10% !important;
+}
+.register-steps {
+    margin: 0 0 100px;
+}
+.register-steps {
+    min-height: 80vh;
+    overflow: hidden;
+}
+.etape-subscribe {
+    text-align: center;
+}
+.view {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+    z-index: 5;
+}
+* {
+    outline: none;
+}
+.etape-subscribe h1 {
+    font-size: 32px;
+    margin: 0;
+}
+.btn-subscription {
+    margin-top: 40px;
+    text-align: center;
+}
+.btn-subscription .create-myspliiit {
+    position: inherit;
+}
+.create-myspliiit {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+.btn-subscription .create-myspliiit ul {
+    margin: 0 auto 30px;
+}
+.create-myspliiit ul {
+    display: flex;
+    font-weight: 700;
+    line-height: 50px;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+.create-myspliiit .radio {
+    margin-right: 15px;
+    font-size: 14px;
+}
+.radio {
+    position: relative;
+    cursor: pointer;
+    margin-right: 15px;
+    line-height: 45px;
+}
+.btn-subscription input {
+    border: 1px solid #edf1f4;
+    background: #edf1f4;
+    border-radius: 10px;
+    padding: 15px 20px 18px;
+    font-size: 16px;
+    font-family: gilroyregular;
+    font-weight: 400;
+    transition-timing-function: ease-out;
+    transition-duration: 0.15s;
+    box-sizing: border-box;
+    width: 40%;
+}
+.hidden {
+    display: none !important;
+}
+button,
+input,
+textarea {
+    font-family: gilroyregular;
+}
+input[type="checkbox"]:checked + .label,
+input[type="radio"]:checked + .label {
+    border-color: #00cdd0;
+    padding: 8px;
+}
+.create-myspliiit .radio .label {
+    margin-top: 15px;
+}
+.radio .label {
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    margin-top: 8px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #c8ccd4;
+    border-radius: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+input[type="checkbox"]:checked + .label:after,
+input[type="radio"]:checked + .label:after {
+    transform: scale(1);
+    transition: all 0.2s cubic-bezier(0.35, 0.9, 0.4, 0.9);
+    opacity: 1;
+}
+.radio .label:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #00cdd0;
+    transform: scale(0);
+    transition: all 0.2s ease;
+    opacity: 0.08;
+    pointer-events: none;
+}
+.bloc-offers-subscribe {
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
+}
+.list-offers-subscribe {
+    margin: auto;
+}
+.list-offers-subscribe li {
+    margin: 0 auto;
+    width: 150px;
+    float: left;
+}
+.etape-choix {
+    margin: 0 5px 10px;
+    padding: 15px;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+.bloc-whitee {
+    text-align: center;
+    box-shadow: 4px 12px 40px 6px rgba(43, 59, 93, 0.08);
+    transition-timing-function: ease-out;
+    transition-duration: 0.15s;
+    background: #fff !important;
+    border-radius: 20px;
+}
+select-valid {
+    display: none;
+    position: absolute;
+    top: -6px;
+    text-align: center;
+    opacity: 0.2;
+}
+li .select-valid svg {
+    top: 0;
+    right: 0;
+    height: 8px;
+    position: relative;
+    fill: #fff;
+}
+.list-offers-subscribe img {
+    width: 100%;
+}
+.btn-greenn {
+    text-decoration: none !important;
+    width: 132px;
+    border-radius: 100px;
+    padding: 10px 4px 14px;
+    border: 2px solid #00cdd0;
+    cursor: pointer;
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    position: relative;
+    background: #fff;
+    line-height: normal;
+    margin-bottom: 15px;
+    width: 189px;
+}
+.btn-greenn:hover,
+.myaccount .send-remb button:hover {
+    background: #00cdd0;
+    color: #291b44 !important;
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
+    transform: scale(1.05);
+}
+.btn-suggest {
+    margin-left: 10px;
+}
+.inline-block {
+    display: inline-block;
+}
