@@ -11,6 +11,7 @@ const GuestRoutes = () =>
     { path: "/login", element: <SignIn /> },
     { path: "/signup", element: <SignUp /> },
     { path: "/offer", element: <Main /> },
+
   ]);
 const AdminRoutes = () => useRoutes([]);
 
