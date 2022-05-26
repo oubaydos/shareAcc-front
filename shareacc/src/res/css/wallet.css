@@ -1,0 +1,188 @@
+.container-3 {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1200px;
+  z-index: 5;
+}
+.bloc-dashboard {
+  display: flex;
+  margin-bottom: 40px;
+  position: relative;
+}
+.accroche-dash {
+  width: 100%;
+  position: relative;
+  line-height: 50px;
+  display: flex;
+}
+* {
+  outline: none;
+}
+.accroche-dash h2 {
+  font-weight: 700;
+  font-size: 32px;
+  margin: 0;
+}
+.create-myspliiit {
+  position: absolute;
+  right: 0;
+  display: flex;
+}
+.btn-add-offer,
+.btn-detail-offer,
+.btn-logout {
+  border-radius: 100px;
+  padding: 12px 30px 14px;
+  border: 2px solid #00cdd0;
+  font-size: 16px;
+}
+.btn-add-offer,
+.btn-detail-offer,
+.btn-logout,
+.btn-signal {
+  cursor: pointer;
+  transition-timing-function: ease-out;
+  transition-duration: 0.1s;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+}
+.add-fund-cagnotte {
+  background: #291b44;
+  color: #fff;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  margin-right: 5px;
+  margin-left: -5px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition-timing-function: ease-out;
+  transition-duration: 0.25s;
+}
+.cagnotte-container {
+  display: flex;
+  margin: 0 -15px;
+}
+.info-paiement {
+  margin: 0 15px;
+  position: relative;
+  padding: 50px 0;
+}
+.width50 {
+  width: 50%;
+}
+.bloc-white {
+  text-align: center;
+  box-shadow: 4px 12px 40px 6px rgba(43, 59, 93, 0.08);
+  transition-timing-function: ease-out;
+  transition-duration: 0.15s;
+  background: #fff !important;
+  border-radius: 20px;
+}
+.bloc-info-delais p {
+  opacity: 0.5;
+}
+.info-paiement p {
+  margin: 0;
+  opacity: 0.6;
+}
+.info-paiement h3 {
+  font-size: 72px;
+  margin: 0;
+  line-height: 70px;
+}
+.waiting-cagnotte .euro-color {
+  color: #a8b4c0;
+}
+.info-paiement h3 span {
+  font-weight: 400;
+}
+.info-paiement h3 {
+  font-size: 72px;
+  margin: 0;
+  line-height: 70px;
+}
+.bloc-blue {
+  color: #fff;
+  background: #00cdd0 !important;
+}
+.info-paiement {
+  margin: 0 15px;
+  position: relative;
+  padding: 50px 0;
+}
+.width50 {
+  width: 50%;
+}
+.coin-spliiit2 {
+  position: absolute;
+  bottom: -20px;
+  left: -50px;
+}
+.coin-spliiit2 img {
+  width: 130px;
+}
+.coin-spliiit {
+  position: absolute;
+  top: -20px;
+  right: -40px;
+}
+.coin-spliiit img {
+  width: 180px;
+}
+.info-paiement p {
+  margin: 0;
+  opacity: 0.6;
+}
+.info-paiement h3 span {
+  font-weight: 400;
+}
+.euro-color-white {
+  opacity: 0.5;
+}
+.history-paiements,
+.history-paiements-spliiit {
+  text-align: left;
+  position: relative;
+}
+.history-paiements {
+  margin-bottom: 100px;
+  margin-top: 30px;
+  padding: 30px;
+}
+.history-paiements-spliiit h3,
+.history-paiements h3 {
+  font-size: 20px;
+  margin: 0 0 30px;
+  line-height: 40px;
+}
+.history-paiements,
+.history-paiements-spliiit {
+  text-align: left;
+  position: relative;
+}
+.annual-virement {
+  position: absolute;
+  right: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  top: 30px;
+  display: flex;
+  line-height: 40px;
+}
+.history-paiements,
+.history-paiements-spliiit {
+  text-align: left;
+  position: relative;
+}
+
+.hidden-responsive {
+  top: 107px;
+  position: relative;
+}

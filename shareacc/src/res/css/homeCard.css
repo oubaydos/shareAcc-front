@@ -1,0 +1,26 @@
+.homeCardContainer {
+  width: 20%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.homeCardContainer .Card {
+  box-shadow: 4px 12px 40px 6px rgba(43, 59, 93, 0.08);
+  transition-timing-function: ease-out;
+  transition-duration: 0.15s;
+  background: #fff !important;
+  border-radius: 20px;
+}
+
+.homeCardContainer .part-alert-container {
+  height: 130px;
+  border-radius: 0 0 10px 10px;
+  line-height: 18px;
+  background: #291b44;
+  /* position: relative; */
+}
+
+.homeCardContainer .imageCircle {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}

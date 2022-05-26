@@ -1,0 +1,25 @@
+.main-logo {
+  width: 7%;
+  margin-top: 1.5%;
+  margin-left: 1.5%;
+}
+
+.btn-signup {
+  outline: none !important;
+  background: #e51c5c;
+}
+
+.btn-login {
+  background: #291b44;
+}
+
+nav {
+  margin-bottom: -20px;
+}
+
+.header-page {
+  background: white;
+  top: 0;
+  width: -webkit-fill-available;
+  position: fixed;
+}

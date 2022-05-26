@@ -6,11 +6,12 @@ import Main from "./components/OfferList"
 import ShareSubscription from "./components/shareSubscription/ShareSubscription";
 import NavbarUnauthenticated from "./components/Navbar/NavbarUnauthenticated"
 import NavbarAuthenticated from "./components/Navbar/NavbarAuthenticated"
+import SearchPage from "./components/searchPage2"
 
 const ContributorRoutes = () => useRoutes([]);
 const GuestRoutes = () =>
   useRoutes([
-    { path: "/", element: <Home /> },
+    { path: "/", element: <SearchPage /> },
     { path: "/login", element: <SignIn /> },
     { path: "/signup", element: <SignUp /> },
     { path: "/offer", element: <Main /> },

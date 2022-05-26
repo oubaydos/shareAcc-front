@@ -1,0 +1,143 @@
+.subscripton-panel {
+  position: relative;
+  z-index: -1;
+  top: 156px;
+  margin-left: 8% !important;
+}
+
+.heading-sub {
+  display: flex;
+}
+
+.count {
+  margin-left: -4px;
+  font-size: 22px;
+
+  font-weight: 400;
+}
+.btn-add-offer:not(.disabled):hover,
+.btn-detail-offer:hover,
+.btn-logout:hover {
+  background: #00cdd0;
+  color: #291b44 !important;
+  transition-timing-function: ease-out;
+  transition-duration: 0.1s;
+  transform: scale(1.05);
+}
+.width50 {
+  width: 40%;
+}
+.center-list {
+  margin-top: 125px !important;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 15px 30px;
+  float: left;
+  box-sizing: border-box;
+  margin-left: 73px !important;
+}
+.bloc-abo-dash {
+  width: 100%;
+  position: relative;
+}
+.abo-none .add-btn-abo,
+.abo-none:hover .add-btn-abo {
+  transition-timing-function: ease-out;
+  transition-duration: 0.2s;
+}
+.abo-none .add-btn-abo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  line-height: 80px;
+  color: #f7fbfd;
+  font-size: 60px;
+  font-weight: 700;
+  background: #dfe6e7;
+  margin: 125px auto 0;
+}
+.abo-none {
+  border: 5px dashed #edf1f4;
+  border-radius: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 700;
+  color: #dfe6e7;
+  height: 404px;
+  font-size: 24px;
+}
+.abo-none,
+.abo-none:hover {
+  transition-timing-function: ease-out;
+  transition-duration: 0.2s;
+}
+
+.abo-none:hover {
+  border-color: #291b44;
+  color: #291b44 !important;
+}
+
+.abo-none:hover .add-btn-abo {
+  background: #291b44;
+}
+.abo-none .add-btn-abo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  line-height: 65px;
+  color: #f7fbfd;
+  font-size: 60px;
+  font-weight: 700;
+  background: #dfe6e7;
+  margin: 125px auto 0;
+}
+.btn-add-offer,
+.btn-detail-offer,
+.btn-logout {
+  border-radius: 100px;
+  padding: 12px 30px 14px;
+  border: 2px solid #00cdd0;
+  font-size: 16px;
+}
+.btn-add-offer,
+.btn-detail-offer,
+.btn-logout,
+.btn-signal {
+  cursor: pointer;
+  transition-timing-function: ease-out;
+  transition-duration: 0.1s;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+}
+.bloc-dashboard {
+  display: flex;
+  margin-bottom: 40px;
+  position: relative;
+}
+.list-spliiit-dash {
+  display: block;
+  margin: 0 -15px 100px;
+}
+.btn-add-offer,
+.btn-detail-offer,
+.btn-logout {
+  border-radius: 100px;
+  padding: 12px 30px 14px;
+  border: 2px solid #00cdd0;
+  font-size: 16px;
+}
+.accroche-dash {
+  width: 70%;
+  position: relative;
+  line-height: 50px;
+  display: flex;
+}
+.btn-add-offer {
+  right: 0;
+  position: relative !important;
+  color: black !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+}

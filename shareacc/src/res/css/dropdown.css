@@ -1,0 +1,119 @@
+.block-postit .block-notif {
+  min-width: auto;
+  width: 450px;
+  transform: translateX(-37.3%);
+  margin: 0;
+  padding: 15px 0 0;
+}
+.block-postit .postit-content {
+  position: absolute;
+  left: 50%;
+}
+.show {
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 450px;
+  box-shadow: 0 4px 50px rgba(43, 59, 93, 0.15);
+  z-index: 1;
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-left: -195px;
+  max-height: 80vh;
+  padding-bottom: 10px;
+}
+.block-postit .block-notif:before {
+  border-bottom-color: #fff;
+}
+.block-postit .postit-content:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #291b44;
+}
+
+.block-postit .block-notif h3 {
+  padding: 0 20px 10px;
+  text-align: left;
+  display: flex;
+  margin: 0;
+  line-height: 40px;
+  border-bottom: 1px solid #dde2e9;
+}
+.dropdown-content h3 {
+  text-align: center;
+  font-size: 16px;
+}
+* {
+  outline: none;
+}
+.d-flex.justify-content-center {
+  justify-content: center;
+}
+.d-flex.align-items-center {
+  align-items: center;
+}
+.notif-emoji {
+  padding: 20px 0 25px;
+}
+.w-100 {
+  width: 100%;
+}
+.d-flex {
+  width: 336% !important;
+  display: flex;
+}
+.notif-emoji span {
+  opacity: 0.5;
+  font-size: 14px;
+}
+.notification-emoji {
+  width: 20px;
+  margin-left: 5px;
+}
+.goto-notifs,
+.goto-notifs:hover {
+  transition-timing-function: ease-out;
+  transition-duration: 0.1s;
+}
+
+.goto-notifs:hover {
+  color: #fff;
+  background: #291b44 !important;
+  border-top: 1px solid #291b44;
+}
+
+.goto-notifs {
+  text-decoration: none !important;
+  margin-left: -120px;
+  display: block;
+  width: 335%;
+  padding: 4px 0px 10px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #dde2e9;
+  background: #f7fbfd;
+  border-radius: 0 0 20px 20px;
+  font-weight: 700;
+}
+.ul {
+  display: flex;
+  margin: 30px auto 0;
+  width: 30%;
+  max-width: 300px;
+}
+.hello {
+  padding: 0px 100px 0px 120px;
+  position: absolute;
+  inset: 15px auto auto -152px !important;
+  margin: 0px;
+  transform: translate3d(0px, 30px, 0px);
+  border-radius: 24px;
+}

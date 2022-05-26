@@ -1,0 +1,377 @@
+.ui-dialog .ui-dialog-content {
+  padding: 0 !important;
+  overflow: inherit !important;
+}
+.ui-dialog .ui-dialog-content {
+  position: relative;
+  border: 0;
+  padding: 0.5em 1em;
+  background: none;
+  overflow: auto;
+}
+.giftcard-modal {
+  text-align: center;
+}
+.ui-widget-content {
+  color: #2a2f45 !important;
+}
+.ui-widget-content {
+  border: 1px solid #aaaaaa;
+  background: #ffffff;
+  color: #222222;
+}
+* {
+  outline: none;
+}
+.ui-widget {
+  font-family: gilroyregular !important;
+}
+.ui-widget {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1.1em;
+}
+.giftcard-modal h1 {
+  margin: 0;
+}
+.giftcard-modal p {
+  margin: 0;
+}
+.giftcard-modal {
+  text-align: center;
+}
+.gift-bonhomme1 {
+  position: absolute;
+  width: 180px;
+  right: -100px;
+}
+.gift-bonhomme2 {
+  position: absolute;
+  width: 160px;
+  left: -50px;
+  top: 0;
+}
+.giftcard-modal .amount-giftcard {
+  border-radius: 20px;
+  padding: 20px 20px 30px;
+  margin: 50px auto 30px;
+  background: #291b44;
+  color: #fff;
+}
+.range-chiffre {
+  display: flex;
+}
+.line-suscribe {
+  line-height: 45px;
+  margin: 0 auto 10px;
+}
+.flex {
+  display: flex;
+}
+.btn-range {
+  font-size: 32px;
+  border: 2px solid #00cdd0;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  line-height: 45px;
+  cursor: pointer;
+  font-weight: 700;
+  text-align: center;
+}
+.line-suscribe {
+  line-height: 45px;
+  margin: 0 auto 10px;
+}
+.tarif-range {
+  position: relative;
+}
+.giftcard-modal .input-range {
+  background: #291b44;
+  color: #fff;
+}
+.tarif-range .input-range {
+  margin-right: 60px !important;
+  width: 90px !important;
+}
+.range-chiffre input,
+.range-chiffre input:hover {
+  border: none;
+  box-shadow: none;
+}
+.range-chiffre input {
+  background: #fff;
+}
+.ui-widget button,
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea {
+  font-family: gilroyregular !important;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1em;
+}
+.input-range {
+  font-size: 44px !important;
+  margin: 0 30px !important;
+  font-weight: 700 !important;
+  border: none !important;
+  padding: 0 !important;
+  width: 150px !important;
+  text-align: center;
+  background: #fff;
+  border-radius: 0 !important;
+  transition-timing-function: ease-out;
+  transition-duration: 0.15s;
+  color: #291b44;
+}
+button,
+input,
+textarea {
+  font-family: gilroyregular;
+}
+.signe-euro {
+  position: absolute;
+  font-weight: 700;
+  font-size: 44px;
+  right: 30px;
+  top: 5px;
+}
+.giftcard-modal .offer-friend {
+  position: relative;
+  text-align: left;
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px solid #edf1f4;
+}
+.giftcard-modal {
+  text-align: center;
+}
+.giftcard-modal .offer-friend h3 {
+  margin: 0;
+}
+.giftcard-modal .offer-friend {
+  position: relative;
+  text-align: left;
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px solid #edf1f4;
+}
+.giftcard-modal .offer-friend .statut-paiement-cagnotte {
+  top: 24px;
+}
+.statut-paiement-cagnotte {
+  position: absolute;
+  right: 30px;
+  top: 22px;
+}
+.statut-paiement-cagnotte span {
+  font-weight: 700;
+  vertical-align: 12px;
+}
+.card {
+  right: 50px;
+  display: inline-block;
+  margin: 5px 20px;
+  height: 24px;
+  text-align: center;
+  position: relative;
+}
+.giftcard-modal .offer-friend .mail-friend {
+  padding: 20px;
+  background: #f7fbfd;
+  border-radius: 10px;
+  margin-top: 30px;
+  position: relative;
+  line-height: 40px;
+  font-weight: 700;
+}
+.d-none,
+.dnone {
+  display: none !important;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.ui-widget button,
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea {
+  font-family: gilroyregular !important;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1em;
+}
+
+button,
+input,
+textarea {
+  font-family: gilroyregular;
+}
+.statut-paiement-cagnotte span {
+  font-weight: 700;
+  vertical-align: 12px;
+}
+.switch,
+.toggle {
+  position: absolute;
+  transition: 0.5s;
+}
+.switch {
+  display: block;
+  cursor: pointer !important;
+  width: 60px;
+  height: 24px;
+  background: #dfe6e7;
+  border-radius: 12px;
+  top: 0;
+}
+.toggle {
+  height: 33.6px;
+  width: 33.6px;
+  border-radius: 50%;
+  background: #fff;
+  top: -4.8px;
+  left: 26.2px;
+  box-shadow: 0 1.2px 2.4px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  border: none !important;
+}
+.switch,
+.toggle {
+  position: absolute;
+  transition: 0.5s;
+}
+.d-none,
+.dnone {
+  display: none !important;
+}
+.giftcard-modal .offer-friend .mail-friend input {
+  border-radius: 50px;
+  border: 1px solid #edf1f4;
+  font-size: 16px;
+  font-family: gilroyregular;
+  position: absolute;
+  right: 20px;
+  height: 38px;
+  width: 40%;
+  padding: 0 20px 2px;
+}
+.ui-widget button,
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea {
+  font-family: gilroyregular !important;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1em;
+}
+button,
+input,
+textarea {
+  font-family: gilroyregular;
+}
+.range-chiffre {
+  display: flex;
+}
+.line-suscribe {
+  line-height: 45px;
+  margin: 0 auto 10px;
+}
+.flex {
+  display: flex;
+}
+.tarif-range {
+  position: relative;
+}
+.giftcard-modal .input-range {
+  background: #291b44;
+  color: #fff;
+}
+.tarif-range .input-range {
+  margin-right: 60px !important;
+  width: 90px !important;
+}
+.range-chiffre input,
+.range-chiffre input:hover {
+  border: none;
+  box-shadow: none;
+}
+.range-chiffre input {
+  background: #fff;
+}
+.input-range {
+  font-size: 44px !important;
+  margin: 0 30px !important;
+  font-weight: 700 !important;
+  border: none !important;
+  padding: 0 !important;
+  width: 150px !important;
+  text-align: center;
+  background: #fff;
+  border-radius: 0 !important;
+  transition-timing-function: ease-out;
+  transition-duration: 0.15s;
+  color: #291b44;
+}
+.signe-euro {
+  position: absolute;
+  font-weight: 700;
+  font-size: 44px;
+  right: 30px;
+  top: 5px;
+}
+.giftcard-modal .payment-giftcard {
+  margin: 30px 0;
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px solid #edf1f4;
+}
+.giftcard-modal .payment-giftcard h3 {
+  margin: 0;
+}
+.giftcard-modal .payment-giftcard .choice-payment {
+  display: flex;
+  margin-bottom: 20px;
+}
+.giftcard-modal {
+  text-align: center;
+}
+.giftcard-modal .payment-giftcard .choice-payment div {
+  width: 100%;
+  padding: 20px;
+  background: #291b44;
+  margin: 30px 5px 0;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition-timing-function: ease-out;
+  transition-duration: 0.25s;
+}
+.giftcard-modal .payment-giftcard .choice-payment img {
+  width: 50%;
+}
+.giftcard-modal .payment-giftcard .choice-payment span {
+  display: block;
+  opacity: 0.5;
+}
+.giftcard-modal .payment-giftcard small {
+  display: block;
+  opacity: 0.5;
+}
+.btn-range:hover {
+  border-color: #00cdd0;
+  background: #00cdd0;
+}

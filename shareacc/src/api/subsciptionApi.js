@@ -13,12 +13,11 @@ const listUserOffers= (setSubscriptions,cookies)=>{
     axios.get(`${endpoint}`, {
         headers: {
             'Content-Type': 'application/json',
-            'Authorisation': cookies.get("Authorization"+configData.COOKIE_SUFFIX)
+            'Authorization': cookies.get("Authorization"+configData.COOKIE_SUFFIX)
         }
     }).then(
         (res) => {
             console.log(res.data);
-            
         }
         ,
         (err) => {

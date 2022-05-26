@@ -11,29 +11,9 @@ import { useCookies, CookiesProvider } from "react-cookie";
 import { useState, useEffect } from "react";
 import configData from "./config.json";
 
+import applicationTheme from "./theme"
 
-
-
-const theme = createTheme({
-  typography: {
-    fontFamily: ["Space Grotesk"].join(","),
-    fontSize: 15,
-    button: {
-      textTransform: "none",
-    },
-  },
-  palette: {
-    primary: {
-      main: "#006D77",
-    },
-    secondary: {
-      main: "#6495ED",
-    },
-    grey: {
-      main: "#8C92AC",
-    },
-  },
-});
+const theme = createTheme(applicationTheme);
 
 function App() {
 
