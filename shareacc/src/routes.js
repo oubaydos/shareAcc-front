@@ -7,15 +7,18 @@ import ShareSubscription from "./components/shareSubscription/ShareSubscription"
 import NavbarUnauthenticated from "./components/Navbar/NavbarUnauthenticated"
 import NavbarAuthenticated from "./components/Navbar/NavbarAuthenticated"
 import SearchPage from "./components/searchPage2"
+import OfferList from "./components/OfferList";
 
 const ContributorRoutes = () => useRoutes([]);
 const GuestRoutes = () =>
   useRoutes([
-    { path: "/", element: <SearchPage /> },
+    { path: "/", element: <Home /> },
     { path: "/login", element: <SignIn /> },
     { path: "/signup", element: <SignUp /> },
     { path: "/offer", element: <Main /> },
     { path: "/share-subscription", element: <ShareSubscription /> },
+    { path: "/marketplace",element : <SearchPage/>},
+    { path: "/marketplace/list/:provider",element : <OfferList/>}
 
   ]);
 const AdminRoutes = () => useRoutes([]);

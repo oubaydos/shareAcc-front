@@ -1,13 +1,28 @@
 import configData from "../config.json";
+import axios from "axios";
+import { getCookie } from 'react-use-cookie';
+
 
 const API_URL = configData.SERVER_URL+"/offer";
 
-const fetchData = async (url) =>{
-    const response = await fetch(url);
-    const data = await response.json();
-    return data;
+const fetchOffers = (pageNumber,provider,setOffers) =>{
+    axios.get(`${API_URL}`,  {
+        headers: {
+            'Authorization': getCookie("Authorization"),
+        },
+        params : {
+            "accountProvider" : provider.toUpperCase(),
+            "pageNumber":pageNumber
+        }
+    }).then(
+        (res) => {
+            console.log(res.data)
+            setOffers(res.data);
+        },
+        (err)=>{
+            console.error("error in getting offers")
+            return;
+        }
+    );
 }
-export const fetchOffers = (param = "all" ) => {
-    if(param === "all") return fetchData(API_URL);
-    return fetchData(`${API_URL}/${param}`);
-}
+export default fetchOffers;

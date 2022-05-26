@@ -37,7 +37,7 @@ const services = [
     price: "2.98€",
   },
   {
-    id: 6,
+    id: 2,
     category: "video games",
     name: "Xbox",
     image: "https://www.spliiit.com/img/subscription/xbox.png",

@@ -24,7 +24,7 @@ export default function login(data,setCookie) {
         }
     }).then(
         (res) => {
-            setCookie("Authorization"+configData.COOKIE_SUFFIX,res.headers["authorization"])
+            setCookie("Authorization",res.headers["authorization"])
             goto("/")
         }
         ,
