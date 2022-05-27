@@ -40,7 +40,9 @@ function App() {
           <Router>
             <div className="body">
               <NavbarUnauthenticated />
+              {/*TODO : check if guest*/}
               {getRoutes("GUEST")}
+              {/*{getRoutes("CONTRIBUTOR")}*/}
               {/* <Footer /> */}
             </div>
           </Router>

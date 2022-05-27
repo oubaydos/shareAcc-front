@@ -42,6 +42,13 @@ export function removeCookie(name) {
 
 export function importAll(r) {
     let images = {};
-    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    r.keys().map((item) => { images[item.replace('./', '')] = r(item); });
     return images;
+}
+export function removeLastSlash(input){
+    if (input.charAt(input.length - 1) === "/") {
+        return input.substr(0, input.length - 1)
+    } else {
+        return input;
+    }
 }

@@ -3,46 +3,11 @@ import "../../res/css/shareSubscription.css";
 import { Link } from "react-router-dom";
 import {useState} from "react";
 import React from "react"
-import {importAll} from "../../utils/utils";
-const images = importAll(require.context("../../res/images/", false, /\.(png|jpe?g|svg)$/));
+import {goto, removeLastSlash} from "../../utils/utils";
+import allServices from "../../res/allServices";
 
 const ShareSubscription = () => {
-    const [radioButtons] = useState({
-
-        products: [
-            {
-                id: 1,
-                categoryName: "SVOD",
-                imgSrc: images["netflix.png"],
-            },
-            {
-                id: 2,
-                categoryName: "SVOD",
-                imgSrc: images["disneyplus.png"],
-            },
-            {
-                id: 3,
-                categoryName: "SVOD",
-                imgSrc: images["youtubepremium.png"],
-            },
-            {
-                id: 4,
-                categoryName: "SVOD",
-                imgSrc: images["appletv.png"],
-            },
-            {
-                id: 5,
-                categoryName: "SVOD",
-                imgSrc: images["starzplay.png"],
-            },
-            {
-                id: 6,
-                categoryName: "SVOD",
-                imgSrc: images["mubi.png"],
-            }
-
-        ],
-    });
+    const [radioButtons] = useState(allServices);
 
     return (
         <React.Fragment>
@@ -66,9 +31,11 @@ const ShareSubscription = () => {
                                         >
                                             <div className="select-valid"></div>{" "}
                                             <img
+
                                                 src={product.imgSrc}
                                                 alt="logo Netflix"
                                                 title="Netflix"
+                                                onClick={()=>goto(removeLastSlash(window.location.pathname)+`/${product.id}/plans`)}
                                             />
                                         </div>
                                     </li>

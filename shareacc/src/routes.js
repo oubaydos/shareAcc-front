@@ -2,9 +2,15 @@ import { useRoutes } from "react-router-dom";
 import SignIn from "./components/SignIn"
 import SignUp from "./components/SignUp"
 import Home from "./components/Home"
-import Main from "./components/OfferList"
+import Main from "./components/Offer/OfferList"
+import ShareSubscription from "./components/shareSubscription/ShareSubscription";
+import ChoosePlan from "./components/shareSubscription/ChoosePlan";
 
-const ContributorRoutes = () => useRoutes([]);
+const ContributorRoutes = () => useRoutes([
+    { path: "/", element: <Home /> },
+    {path: "/subscription/new", element: <ShareSubscription/>},
+    {path: "/subscription/new/:id/plans", element: ({id}) => <ChoosePlan id={id} />}
+]);
 const GuestRoutes = () =>
   useRoutes([
     { path: "/", element: <Home /> },
