@@ -1,6 +1,10 @@
 import "../../res/css/shareSubscription.css";
+import allServices from "../../res/allServices";
 
 export default (props) => {
+    if (props.id !== null){
+        props.plan = allServices.products.find(x => x.id === this.props.id);
+    }
     if (props.plan == null) {
         props.plan = {
             id: 1,

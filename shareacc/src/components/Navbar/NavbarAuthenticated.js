@@ -5,7 +5,6 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
-import { styled, useTheme } from "@mui/material/styles";
 
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
@@ -14,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 
 import MenuIcon from '@mui/icons-material/Menu';
-import { goto } from "../../utils/utils";
+import {goto, logOut} from "../../utils/utils";
 import logo from '../../res/images/shareacc_logo.svg';
 // import {logOut} from  "../../service/authentication";
 
@@ -34,7 +33,7 @@ const logoView = <img src={logo} alt="logo" height="24" width="24" style={{font:
 
 
 const NavbarAuthenticated = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
 
@@ -61,7 +60,7 @@ const NavbarAuthenticated = () => {
     switch (event.target.innerHTML) {
       case "Logout":
         console.log("logging out...");
-        // logOut();
+        logOut();
 
         // logOut();
         break;

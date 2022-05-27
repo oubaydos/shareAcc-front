@@ -1,5 +1,3 @@
-import configData from "../config.json";
-
 export function goto(url){
     window.location.href = url;
 }
@@ -11,10 +9,7 @@ export function notNull(str){
     return str !== undefined && str != null;
 }
 export function logOut() {
-    // TODO : to cookies
-    removeCookie("Authorization"+configData.COOKIE_SUFFIX);
-    removeCookie("isContributor");
-    removeCookie("isAdmin");
+    removeCookie("Authorization");
     goto("/");
 }
 export function getCookie(name) {
@@ -42,6 +37,13 @@ export function removeCookie(name) {
 
 export function importAll(r) {
     let images = {};
-    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    r.keys().map((item) => { images[item.replace('./', '')] = r(item); });
     return images;
+}
+export function removeLastSlash(input){
+    if (input.charAt(input.length - 1) === "/") {
+        return input.substr(0, input.length - 1)
+    } else {
+        return input;
+    }
 }

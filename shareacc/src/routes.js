@@ -2,17 +2,22 @@ import { useRoutes } from "react-router-dom";
 import SignIn from "./components/SignIn"
 import SignUp from "./components/SignUp"
 import Home from "./components/Home"
-import Main from "./components/OfferList"
+import Main from "./components/Offer/OfferList"
 import ShareSubscription from "./components/shareSubscription/ShareSubscription";
+import ChoosePlan from "./components/shareSubscription/ChoosePlan";
 import NavbarUnauthenticated from "./components/Navbar/NavbarUnauthenticated"
 import NavbarAuthenticated from "./components/Navbar/NavbarAuthenticated"
 import SearchPage from "./components/searchPage2"
-import OfferList from "./components/OfferList";
+import OfferList from "./components/Offer/OfferList";
 import OfferCard from "./components/OfferCard";
 import OfferOrSubscribe from "./components/offerOrSubscribe";
 import  Subscriptions  from "./components/Subscriptions"
 
-const ContributorRoutes = () => useRoutes([]);
+const ContributorRoutes = () => useRoutes([
+    { path: "/", element: <Home /> },
+    {path: "/subscription/new", element: <ShareSubscription/>},
+    {path: "/subscription/new/:id/plans", element: ({id}) => <ChoosePlan id={id} />}
+]);
 const GuestRoutes = () =>
   useRoutes([
     { path: "/", element: <Home /> },
@@ -43,9 +48,9 @@ const getRoutes = (role) => {
 };
 const getNavbar = (role)=>{
   console.log(role);
-  if(role==="GUEST") return <NavbarUnauthenticated/>
-
-  return <NavbarAuthenticated/>
+  if(role==="ADMIN" || role==="CONTRIBUTOR") return <NavbarAuthenticated/>
+  else if (role==="GUEST") return <NavbarUnauthenticated/>
+  return <div></div>
 
 }
 export {getRoutes,getNavbar};

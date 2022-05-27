@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import styles from "../res/css/main.module.css";
-import fetchOffers  from "../api/offerApi";
+import styles from "../../res/css/main.module.css";
+import fetchOffers from "../../api/offerApi";
 import {useParams} from "react-router-dom";
 
 const OfferList = () => {
