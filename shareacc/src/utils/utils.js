@@ -1,5 +1,3 @@
-import configData from "../config.json";
-
 export function goto(url){
     window.location.href = url;
 }
@@ -11,10 +9,7 @@ export function notNull(str){
     return str !== undefined && str != null;
 }
 export function logOut() {
-    // TODO : to cookies
-    removeCookie("Authorization"+configData.COOKIE_SUFFIX);
-    removeCookie("isContributor");
-    removeCookie("isAdmin");
+    removeCookie("Authorization");
     goto("/");
 }
 export function getCookie(name) {

@@ -8,7 +8,7 @@ import ChoosePlan from "./components/shareSubscription/ChoosePlan";
 import NavbarUnauthenticated from "./components/Navbar/NavbarUnauthenticated"
 import NavbarAuthenticated from "./components/Navbar/NavbarAuthenticated"
 import SearchPage from "./components/searchPage2"
-import OfferList from "./components/OfferList";
+import OfferList from "./components/Offer/OfferList";
 import OfferCard from "./components/OfferCard";
 import OfferOrSubscribe from "./components/offerOrSubscribe";
 
@@ -46,9 +46,9 @@ const getRoutes = (role) => {
 };
 const getNavbar = (role)=>{
   console.log(role);
-  if(role==="GUEST") return <NavbarUnauthenticated/>
-
-  return <NavbarAuthenticated/>
+  if(role==="ADMIN" || role==="CONTRIBUTOR") return <NavbarAuthenticated/>
+  else if (role==="GUEST") return <NavbarUnauthenticated/>
+  return <div></div>
 
 }
 export {getRoutes,getNavbar};

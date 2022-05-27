@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Table from "../MuiTable";
 import styles from "../../res/css/main.module.css";
-import { fetchOffers } from "../../api/offerApi";
+import fetchOffers from "../../api/offerApi";
+import {useParams} from "react-router-dom";
 
 const OfferList = () => {
 

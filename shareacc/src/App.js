@@ -1,5 +1,3 @@
-import NavbarUnauthenticated from "./components/Navbar/NavbarUnauthenticated";
-
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "@fontsource/space-grotesk"; // Defaults to weight 400.
 import {getRoutes,getNavbar} from "./routes"
@@ -7,9 +5,8 @@ import { Helmet } from "react-helmet";
 
 import { BrowserRouter as Router } from "react-router-dom";
 import { getAuthenticatedUser  } from "./api/authService";
-import { useCookies, CookiesProvider } from "react-cookie";
+import { useCookies} from "react-cookie";
 import { useState, useEffect } from "react";
-import configData from "./config.json";
 
 import applicationTheme from "./theme"
 
@@ -17,7 +14,7 @@ const theme = createTheme(applicationTheme);
 
 function App() {
 
-  const [authCookies] = useCookies(["Authorization"+configData.COOKIE_SUFFIX]);
+  const [authCookies] = useCookies(["Authorization"]);
 
 
   const authenticatedUser = () => {
