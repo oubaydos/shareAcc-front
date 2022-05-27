@@ -8,6 +8,8 @@ import NavbarUnauthenticated from "./components/Navbar/NavbarUnauthenticated"
 import NavbarAuthenticated from "./components/Navbar/NavbarAuthenticated"
 import SearchPage from "./components/searchPage2"
 import OfferList from "./components/OfferList";
+import OfferCard from "./components/OfferCard";
+import OfferOrSubscribe from "./components/offerOrSubscribe";
 
 const ContributorRoutes = () => useRoutes([]);
 const GuestRoutes = () =>
@@ -18,8 +20,9 @@ const GuestRoutes = () =>
     { path: "/offer", element: <Main /> },
     { path: "/share-subscription", element: <ShareSubscription /> },
     { path: "/marketplace",element : <SearchPage/>},
-    { path: "/marketplace/list/:provider",element : <OfferList/>}
-
+    { path: "/marketplace/list/:provider",element : <OfferList/>},
+    { path: "/offer-card",element : <OfferCard/>},
+    { path: "/offer-or-subscribe",element : <OfferOrSubscribe/>},
   ]);
 const AdminRoutes = () => useRoutes([]);
 
