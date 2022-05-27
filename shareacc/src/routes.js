@@ -5,6 +5,12 @@ import Home from "./components/Home"
 import Main from "./components/Offer/OfferList"
 import ShareSubscription from "./components/shareSubscription/ShareSubscription";
 import ChoosePlan from "./components/shareSubscription/ChoosePlan";
+import NavbarUnauthenticated from "./components/Navbar/NavbarUnauthenticated"
+import NavbarAuthenticated from "./components/Navbar/NavbarAuthenticated"
+import SearchPage from "./components/searchPage2"
+import OfferList from "./components/OfferList";
+import OfferCard from "./components/OfferCard";
+import OfferOrSubscribe from "./components/offerOrSubscribe";
 
 const ContributorRoutes = () => useRoutes([
     { path: "/", element: <Home /> },
@@ -17,6 +23,11 @@ const GuestRoutes = () =>
     { path: "/login", element: <SignIn /> },
     { path: "/signup", element: <SignUp /> },
     { path: "/offer", element: <Main /> },
+    { path: "/share-subscription", element: <ShareSubscription /> },
+    { path: "/marketplace",element : <SearchPage/>},
+    { path: "/marketplace/list/:provider",element : <OfferList/>},
+    { path: "/offer-card",element : <OfferCard/>},
+    { path: "/offer-or-subscribe",element : <OfferOrSubscribe/>},
   ]);
 const AdminRoutes = () => useRoutes([]);
 
@@ -33,4 +44,11 @@ const getRoutes = (role) => {
     //   return <Loading />;
   }
 };
-export default getRoutes;
+const getNavbar = (role)=>{
+  console.log(role);
+  if(role==="GUEST") return <NavbarUnauthenticated/>
+
+  return <NavbarAuthenticated/>
+
+}
+export {getRoutes,getNavbar};

@@ -1,0 +1,72 @@
+.text-center-2 {
+  text-align: center;
+}
+.register-steps {
+  top: 20px;
+  position: relative;
+  margin: 0 0 100px;
+}
+.register-steps {
+  min-height: 80vh;
+  overflow: hidden;
+}
+.etape-1-subscribe {
+  text-align: center;
+}
+.etape-1-subscribe h1 {
+  font-size: 32px;
+  margin: 0;
+}
+.container-2 {
+  top: 0;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1200px;
+  z-index: 5;
+}
+.btn-subscription {
+  margin-top: 40px;
+  text-align: center;
+}
+.line-suscribe {
+  line-height: 45px;
+  margin: 0 auto 10px;
+}
+.btn-subscription input {
+  border: 1px solid #edf1f4;
+  background: #edf1f4;
+  border-radius: 17px;
+  padding: 0px 17px 2px;
+  font-size: 16px;
+  font-family: gilroyregular;
+  font-weight: 400;
+  transition-timing-function: ease-out;
+  transition-duration: 0.15s;
+  box-sizing: border-box;
+  width: 40%;
+}
+.btn-subscription {
+  margin-top: 40px;
+  text-align: center;
+}
+.btn-subscription-etape-1 {
+  border: 2px solid #00cdd0;
+  border-radius: 100px;
+  padding: 7px 33px 6px;
+  cursor: pointer;
+  font-weight: 700;
+  margin: 0 10px;
+  font-size: 16px;
+  background: transparent;
+  display: inline-block;
+}
+button,
+input,
+textarea {
+  font-family: gilroyregular;
+}
+.btn-subscription-etape-1:hover {
+  background: #00cdd0;
+  color: #291b44;
+}

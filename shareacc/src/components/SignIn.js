@@ -15,7 +15,6 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import backgroundImage from "../res/images/background_image.jpg";
 import login from "../api/authService"
 import { useCookies } from "react-cookie";
-import configData from "../config.json";
 
 
 function Copyright(props) {
@@ -35,7 +34,7 @@ const theme = createTheme();
 
 export default function SignIn() {
 
-  const [cookies, setCookie] = useCookies(["Authorization"+configData.COOKIE_SUFFIX]);
+  const [cookies, setCookie] = useCookies(["Authorization"]);
 
   const handleSubmit = (event) => {
     event.preventDefault();

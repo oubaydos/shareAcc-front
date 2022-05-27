@@ -1,0 +1,24 @@
+.bloc-facile {
+  width: 45%;
+  border: 1px solid #edf1f4;
+  margin: 50px auto;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 20px;
+  position: relative;
+  background: #fff;
+  text-align: center;
+}
+.bloc-facile h3 {
+  position: absolute;
+  top: -16px;
+  width: 100px;
+  background: #fff;
+  border: 1px solid #edf1f4;
+  padding: 5px 0;
+  left: 50%;
+  margin: 0 0 0 -50px;
+  color: #fb3c67;
+  border-radius: 50px;
+  font-size: 20px;
+}

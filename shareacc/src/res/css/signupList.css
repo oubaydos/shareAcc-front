@@ -1,0 +1,40 @@
+.signin-signup-choice strong {
+  color: black;
+  line-height: 53px;
+  padding-left: 10px;
+}
+.choice-suscribe li:first-child {
+  border-top: none;
+}
+.choice-login li,
+.choice-suscribe li {
+  border-top: 1px solid #edf1f4;
+  cursor: pointer;
+  transition-timing-function: ease-out;
+  transition-duration: 0.15s;
+  position: relative;
+}
+
+.choice-suscribe {
+  display: block;
+  text-align: left;
+  width: 40%;
+  margin: 20px auto;
+}
+
+.choice-login li img,
+.choice-suscribe li img {
+  width: 20px;
+  position: absolute;
+  right: 35px;
+  top: 17px;
+}
+.fa-chevron-right {
+  opacity: 0.7;
+  height: 12px;
+  position: absolute;
+  right: 10px;
+  fill: #291b44;
+  margin-top: -6px;
+  top: 50%;
+}

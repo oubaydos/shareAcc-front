@@ -1,0 +1,35 @@
+.cross {
+  position: relative;
+  margin-top: 20px;
+  float: right;
+  display: inline;
+  margin-right: 25px;
+}
+
+.cross a {
+  border-radius: 111%;
+  border: 3px solid #edf1f4;
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+  padding: 13px 16px;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #222;
+}
+.cross .fa:hover {
+  color: red;
+
+  transition-timing-function: ease-out;
+  transition-duration: 0.15s;
+}
+.cross a:hover {
+  border-color: red;
+  transform: scale(1.2);
+  transition-timing-function: ease-out;
+  transition-duration: 0.15s;
+}
+
+.cross a .fa {
+  font-size: 1.4em;
+}

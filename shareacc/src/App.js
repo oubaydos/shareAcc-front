@@ -1,48 +1,48 @@
-import NavbarUnauthenticated from "./components/NavbarUnauthenticated/NavbarUnauthenticated";
+import NavbarUnauthenticated from "./components/Navbar/NavbarUnauthenticated";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "@fontsource/space-grotesk"; // Defaults to weight 400.
-import getRoutes from "./routes"
+import {getRoutes,getNavbar} from "./routes"
 import { Helmet } from "react-helmet";
 
 import { BrowserRouter as Router } from "react-router-dom";
+import { getAuthenticatedUser  } from "./api/authService";
+import { useCookies, CookiesProvider } from "react-cookie";
+import { useState, useEffect } from "react";
+import configData from "./config.json";
 
+import applicationTheme from "./theme"
 
-const theme = createTheme({
-  typography: {
-    fontFamily: ["Space Grotesk"].join(","),
-    fontSize: 15,
-    button: {
-      textTransform: "none",
-    },
-  },
-  palette: {
-    primary: {
-      main: "#006D77",
-    },
-    secondary: {
-      main: "#6495ED",
-    },
-    grey: {
-      main: "#8C92AC",
-    },
-  },
-});
+const theme = createTheme(applicationTheme);
 
 function App() {
+
+  const [authCookies] = useCookies(["Authorization"+configData.COOKIE_SUFFIX]);
+
+
+  const authenticatedUser = () => {
+    getAuthenticatedUser(authCookies.Authorization_shareacc, setCurrentUser);
+  };
+  const [currentUser, setCurrentUser] = useState({
+    username: "",
+    role: "",
+  });
+
+  useEffect(() => {
+    authenticatedUser();
+  }, []);
+
   return (
     <ThemeProvider theme={theme}>
         <div className="App">
           <Helmet>
-            <title>DevOpsify</title>
+            <title>ShareAcc</title>
           </Helmet>
 
           <Router>
             <div className="body">
-              <NavbarUnauthenticated />
-              {/*TODO : check if guest*/}
-              {getRoutes("GUEST")}
-              {/*{getRoutes("CONTRIBUTOR")}*/}
+              {getNavbar(currentUser.role)}
+              {getRoutes(currentUser.role)}
               {/* <Footer /> */}
             </div>
           </Router>

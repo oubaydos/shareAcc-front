@@ -1,0 +1,153 @@
+.result-search .width25 {
+  width: 20%;
+  float: left;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.width25:hover {
+  cursor: pointer;
+ 
+  transform: scale(1.1) !important;
+}
+
+.bloc-service {
+  transition-timing-function: ease-out;
+  transition-duration: 0.25s;
+  margin-top: -45px;
+  background: white;
+  border-radius: 18px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.width25 {
+  margin-left: 25px;
+}
+.result-search li {
+  position: relative;
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+.bloc-white {
+  text-align: center;
+  box-shadow: 4px 12px 40px 6px rgba(43, 59, 93, 0.08);
+  transition-timing-function: ease-out;
+  transition-duration: 0.15s;
+  background: #fff !important;
+  border-radius: 20px;
+}
+li {
+  list-style: none;
+}
+* {
+  outline: none;
+}
+.logo-search img {
+  height: 70px;
+  margin: 20px 56px 0;
+}
+.bloc-right-search {
+  margin-top: 35px;
+}
+.round-block {
+  margin-top: -20px;
+  z-index: 1;
+}
+.relative {
+  position: relative;
+}
+.big-round {
+  height: 40px;
+  bottom: -20px;
+}
+.round-white-svg {
+  width: 100%;
+  border-radius: 50%;
+  left: 0;
+  position: absolute;
+  background: #fff;
+}
+.bloc-black {
+  background: #291b44;
+  border-radius: 0 0 20px 20px;
+  padding: 20px;
+}
+.user-public {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-top: -22px;
+  margin-bottom: 10px;
+  height: 41px;
+}
+.user-public ul {
+  display: flex;
+  margin: auto;
+  z-index: 1;
+}
+.user-public li:first-child {
+  margin-left: 0;
+}
+.user-public .btn-modal-infos {
+  cursor: default;
+}
+.user-public li {
+  width: 35px;
+  height: 35px;
+  float: inherit;
+  margin-left: -15px;
+  border: 3px solid #fff;
+}
+.btn-modal-infos,
+.btn-modal-infos:hover {
+  transition-timing-function: ease-out;
+  transition-duration: 0.1s;
+}
+.btn-modal-infos {
+  position: relative;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: 50%;
+}
+.btn-modal-infos,
+.btn-profil {
+  border-radius: 100px;
+  cursor: pointer;
+  background: #fff;
+}
+.tarif-search,
+.tarif-service {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+}
+.tarif-search {
+  color: #fff;
+}
+.tarif-search span {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.5;
+  display: inline;
+  line-height: 30px;
+}
+.from-tarif {
+  font-size: 12px !important;
+  display: inline-block;
+  margin: 0 0 5px;
+}
+.tarif-search span {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.5;
+  display: inline;
+  line-height: 30px;
+}
+.result-search {
+  margin: -90px -15px 150px;
+  min-height: 50vh;
+}

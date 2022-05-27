@@ -1,0 +1,96 @@
+.footerContainer {
+  width: 100%;
+  background-color: #291b44;
+  padding: 40px 0 0px;
+}
+
+.footerContainer .menuContainer {
+  display: flex;
+  width: 90%;
+  margin: 0 auto 40px auto;
+  position: relative;
+  max-width: 1200px;
+  z-index: 5;
+}
+
+.footerContainer .menuHeading {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footerContainer .menuItem {
+  padding: 0;
+  transition-timing-function: ease-out;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  line-height: 24px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #8f8c98;
+}
+
+.footerContainer .menuContainer .customerText {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: -5px;
+}
+
+.footerContainer .flagContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.footerContainer .flagContainer .flagCircle {
+  height: 50px;
+  width: 50px;
+  margin: 0 5px;
+  background: hsla(0, 0%, 100%, 0.1);
+  opacity: 0.5;
+  border-radius: 50%;
+  transition-timing-function: ease-out;
+  transition-duration: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerContainer .companiesContainer {
+  background: #1f1b32;
+  text-align: center;
+  position: relative;
+  height: 200px;
+  width: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.footerContainer .companiesContainer .logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.footerContainer .companiesContainer .companyImage {
+  height: 100px;
+  margin: 0 5%;
+  opacity: 0.3;
+}
+
+.footerContainer .copyText {
+  font-size: 12px;
+  margin: 50px 0 0;
+  color: #8f8c98;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer2 {
+  margin-top: 260px;
+}

@@ -1,0 +1,97 @@
+.content-box-countries {
+  background-attachment: fixed;
+  background-position-y: 5rem;
+  background-image: url("../images/YaMalik.PNG");
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  background-position-x: -110px !important;
+}
+.bloc-country img {
+  padding: 0px 0px 3px 0px;
+  margin-right: 11px;
+  width: 30px;
+}
+
+.choose-country {
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+.register-steps {
+  margin: 0 0 100px;
+}
+.register-steps {
+  min-height: 80vh;
+  overflow: hidden;
+}
+
+.select-country-modal {
+  width: 900px;
+  margin: auto;
+}
+* {
+  outline: none;
+}
+.select-country-modal .list-country,
+.select-country-modal .list-language,
+.select-language-modal .list-country,
+.select-language-modal .list-language {
+  margin: 30px -10px 0;
+}
+
+.select-country-modal .list-country li,
+.select-country-modal .list-language li,
+.select-language-modal .list-country li,
+.select-language-modal .list-language li {
+  line-height: 40px;
+  font-weight: 700;
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+li {
+  list-style: none;
+}
+.select-country-modal .list-country li .bloc-country,
+.select-country-modal .list-country li .bloc-language,
+.select-country-modal .list-language li .bloc-country,
+.select-country-modal .list-language li .bloc-language,
+.select-language-modal .list-country li .bloc-country,
+.select-language-modal .list-country li .bloc-language,
+.select-language-modal .list-language li .bloc-country,
+.select-language-modal .list-language li .bloc-language {
+  border: 2px solid #dde2e9;
+  padding: 10px 0;
+  border-radius: 10px;
+  margin: 10px;
+  transition-timing-function: ease-in;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+.select-country-modal .list-country li,
+.select-country-modal .list-language li,
+.select-language-modal .list-country li,
+.select-language-modal .list-language li {
+  line-height: 40px;
+  font-weight: 700;
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+.select-country-modal .list-country li,
+.select-country-modal .list-language li,
+.select-language-modal .list-country li,
+.select-language-modal .list-language li {
+  line-height: 40px;
+  font-weight: 700;
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+.bloc-country:hover {
+  transform: scale(0.9);
+}

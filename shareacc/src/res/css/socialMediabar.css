@@ -1,0 +1,36 @@
+/*  socialMedia. */
+
+.socialmedia {
+  margin-left: 80px;
+  display: inline;
+  margin-top: 30px;
+}
+
+.socialmedia a {
+  border-radius: 111%;
+  border: 3px solid #edf1f4;
+  cursor: pointer;
+  margin: 9px 6px;
+  width: 56px;
+  height: 56px;
+  padding: 16px;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #222;
+}
+.socialmedia .fa:hover {
+  color: #00cdd0;
+
+  transition-timing-function: ease-out;
+  transition-duration: 0.15s;
+}
+.socialmedia a:hover {
+  border-color: #00cdd0;
+  transform: scale(1.2);
+  transition-timing-function: ease-out;
+  transition-duration: 0.15s;
+}
+
+.socialmedia a .fa {
+  font-size: 1.4em;
+}
