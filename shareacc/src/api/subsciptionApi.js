@@ -1,19 +1,20 @@
 import axios from "axios";
 import configData from "../config.json";
 import {goto} from "../utils/utils";
+import { getCookie } from 'react-use-cookie';
 
 
 //TODO
 const endpoint = configData.SERVER_URL+"/user/offers";
 
 
-const listUserOffers= (setSubscriptions,cookies)=>{
+const listUserOffers= (setSubscriptions)=>{
     const endpoint = configData.SERVER_URL+"/user/offers";
 
     axios.get(`${endpoint}`, {
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': cookies.get("Authorization")
+            'Authorization': getCookie("Authorization")
         }
     }).then(
         (res) => {
@@ -29,4 +30,4 @@ const listUserOffers= (setSubscriptions,cookies)=>{
 }
 
 
-export default getSubscriptions;
+export default listUserOffers;

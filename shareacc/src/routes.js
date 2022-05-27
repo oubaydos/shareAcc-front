@@ -10,6 +10,7 @@ import SearchPage from "./components/searchPage2"
 import OfferList from "./components/OfferList";
 import OfferCard from "./components/OfferCard";
 import OfferOrSubscribe from "./components/offerOrSubscribe";
+import  Subscriptions  from "./components/Subscriptions"
 
 const ContributorRoutes = () => useRoutes([]);
 const GuestRoutes = () =>
@@ -23,6 +24,7 @@ const GuestRoutes = () =>
     { path: "/marketplace/list/:provider",element : <OfferList/>},
     { path: "/offer-card",element : <OfferCard/>},
     { path: "/offer-or-subscribe",element : <OfferOrSubscribe/>},
+    { path: "/dashboard",element : <Subscriptions/>},
   ]);
 const AdminRoutes = () => useRoutes([]);
 
