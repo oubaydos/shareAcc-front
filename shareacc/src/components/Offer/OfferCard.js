@@ -56,14 +56,14 @@ const OfferCard = (props) => {
             {offer.offerer}
           </Typography>
           <Typography variant="h6" align="left">
-            is sharing <strong>Netflix Premium</strong>
+            is sharing <strong>{offer.account.provider} {offer.account.subscriptionType}</strong>
           </Typography>
         </Item>
       </Grid>
       <Grid item md={3}>
         <Item>
           <div class="tarif-bloc-dash">
-            4€
+            {offer.price}€
             <br />
             <span>/per month</span>
           </div>
