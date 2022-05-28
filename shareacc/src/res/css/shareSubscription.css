@@ -196,6 +196,7 @@ li .select-valid svg {
     transition-timing-function: ease-out;
     transition-duration: 0.1s;
     transform: scale(1.05);
+    cursor: pointer;
 }
 #planCard:hover{
     background: #126d7a;
@@ -203,6 +204,7 @@ li .select-valid svg {
     transition-timing-function: ease-out;
     transition-duration: 0.3s;
     transform: scale(1.05);
+    cursor:pointer;
 }
 .btn-suggest {
     margin-left: 10px;
