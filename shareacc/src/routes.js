@@ -11,11 +11,13 @@ import SearchPage from "./components/searchPage2"
 import OfferList from "./components/Offer/OfferList";
 import OfferCard from "./components/OfferCard";
 import OfferOrSubscribe from "./components/offerOrSubscribe";
+import OfferDetails from "./components/Offer/OfferDetails";
 
 const ContributorRoutes = () => useRoutes([
     { path: "/", element: <Home /> },
     {path: "/subscription/new", element: <ShareSubscription/>},
-    {path: "/subscription/new/:id/plans", element: ({id}) => <ChoosePlan id={id} />}
+    {path: "/subscription/new/:id/plans", element: <ChoosePlan />},
+    {path: "/subscription/new/:id/:planChoice/credentials", element: <OfferDetails/>}
 ]);
 const GuestRoutes = () =>
   useRoutes([
