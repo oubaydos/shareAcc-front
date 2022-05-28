@@ -15,6 +15,8 @@ import  Subscriptions  from "./components/Subscriptions"
 import OfferDetails from "./components/Offer/OfferDetails";
 import Subscribe from "./components/subscribe/Subscribe";
 import TempCagnote from "./components/subscribe/Cagnote";
+import Stripe from "./components/subscribe/Stripe";
+
 
 const ContributorRoutes = () => useRoutes([
     { path: "/", element: <Home /> },
@@ -22,7 +24,8 @@ const ContributorRoutes = () => useRoutes([
     {path: "/subscription/new/:id/plans", element: <ChoosePlan />},
     {path: "/subscription/new/:id/:planChoice/credentials", element: <OfferDetails/>},
     {path: "/offer/:offerId/subscribe", element: <Subscribe/>},
-    {path: "/temp", element: <TempCagnote/>},
+    // {path: "/temp", element: <Stripe/>},
+
 ]);
 const GuestRoutes = () =>
   useRoutes([
