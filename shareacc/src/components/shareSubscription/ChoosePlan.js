@@ -1,28 +1,14 @@
 
 import "../../res/css/shareSubscription.css";
-import { Link } from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import {useState} from "react";
 import React from "react"
 import PlanCard from "./planCard"
-const ShareSubscription = () => {
+import {plans} from "../../res/allServices";
+const ShareSubscription = (props) => {
+    let {id}=useParams();
     const [radioButtons] = useState({
-
-        products: [
-            {
-                id: 1,
-                type: "Standard",
-                description: "Watch Netflix on 2 screens at once. HD available",
-                price: 13.49,
-                maxUsers: 2,
-            },
-            {
-                id: 2,
-                type: "Premium",
-                description: "Watch Netflix on 4 screens at once. HD and Ultra HD available",
-                price: 17.99,
-                maxUsers: 4,
-            }
-        ],
+        products: plans[id]
     });
 
     return (
@@ -43,8 +29,7 @@ const ShareSubscription = () => {
                                     <ul>
                                         <div>
                                             <div className="select-valid"></div>{" "}
-                                            <PlanCard plan={product}/>
-
+                                            <PlanCard plan={product} id={props.id}/>
                                         </div>
                                     </ul>
                                 ))}

@@ -12,11 +12,13 @@ import OfferList from "./components/Offer/OfferList";
 import OfferCard from "./components/Offer/OfferCard";
 import OfferOrSubscribe from "./components/Offer/offerOrSubscribe";
 import  Subscriptions  from "./components/Subscriptions"
+import OfferDetails from "./components/Offer/OfferDetails";
 
 const ContributorRoutes = () => useRoutes([
     { path: "/", element: <Home /> },
     {path: "/subscription/new", element: <ShareSubscription/>},
-    {path: "/subscription/new/:id/plans", element: ({id}) => <ChoosePlan id={id} />}
+    {path: "/subscription/new/:id/plans", element: <ChoosePlan />},
+    {path: "/subscription/new/:id/:planChoice/credentials", element: <OfferDetails/>}
 ]);
 const GuestRoutes = () =>
   useRoutes([

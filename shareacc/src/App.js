@@ -18,7 +18,7 @@ function App() {
 
 
   const authenticatedUser = () => {
-    getAuthenticatedUser(authCookies.Authorization_shareacc, setCurrentUser);
+    getAuthenticatedUser(authCookies.Authorization, setCurrentUser);
   };
   const [currentUser, setCurrentUser] = useState({
     username: "",

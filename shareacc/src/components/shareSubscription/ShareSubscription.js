@@ -35,7 +35,7 @@ const ShareSubscription = () => {
                                                 src={product.imgSrc}
                                                 alt="logo Netflix"
                                                 title="Netflix"
-                                                onClick={()=>goto(removeLastSlash(window.location.pathname)+`/${product.id}/plans`)}
+                                                onClick={()=>goto(removeLastSlash(window.location.pathname)+`/${product.name}/plans`)}
                                             />
                                         </div>
                                     </li>
