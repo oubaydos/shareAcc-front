@@ -29,10 +29,7 @@
   height: 90px;
 }
 .tarif-bloc-dash {
-  font-size: 42px;
-  position: absolute;
-  right: 30px;
-  margin-top: 25px;
+  font-size: 20px;
   line-height: 22px;
   font-weight: 700;
   text-align: center;
@@ -48,7 +45,7 @@
   font-weight: 400;
   text-align: left;
   position: relative;
-  margin: 10px 0 0;
+  margin: auto 0 auto 0;
   font-size: 14px;
   height: 20px;
 }

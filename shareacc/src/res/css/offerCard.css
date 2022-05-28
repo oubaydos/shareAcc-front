@@ -1,0 +1,21 @@
+.tarif-bloc-dash {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .tarif-bloc-dash span {
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.5;
+  }
+  .title-bloc-dash {
+    border-top: 1px solid #edf1f4;
+    padding: 15px 60px 15px 0;
+    font-weight: 400;
+    text-align: left;
+    position: relative;
+    margin: 10px 0 0;
+    font-size: 14px;
+    height: 20px;
+  }

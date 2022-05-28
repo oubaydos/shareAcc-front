@@ -1,6 +1,6 @@
 import BorderedInformation from "./borderdInformation";
 import {Button,Typography,Container} from "@mui/material"
-import {goto} from "../utils/utils"
+import {goto} from "../../utils/utils"
 
 
 const OfferOrSubscribe = () => {
