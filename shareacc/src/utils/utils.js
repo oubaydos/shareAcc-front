@@ -47,3 +47,7 @@ export function removeLastSlash(input){
         return input;
     }
 }
+export function getPathParam(index){
+    // TODO
+    return 1;
+}

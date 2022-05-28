@@ -41,8 +41,8 @@ export default function SignIn(props) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        let returnId = createOfferAccount(id, planChoice,email,password);
-        saveOffer(returnId, id, planChoice)
+        let returnId = createOfferAccount(id, planChoice,email,password,true);
+
 
     };
 
