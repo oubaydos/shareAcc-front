@@ -9,8 +9,8 @@ import NavbarUnauthenticated from "./components/Navbar/NavbarUnauthenticated"
 import NavbarAuthenticated from "./components/Navbar/NavbarAuthenticated"
 import SearchPage from "./components/searchPage2"
 import OfferList from "./components/Offer/OfferList";
-import OfferCard from "./components/OfferCard";
-import OfferOrSubscribe from "./components/offerOrSubscribe";
+import OfferCard from "./components/Offer/OfferCard";
+import OfferOrSubscribe from "./components/Offer/offerOrSubscribe";
 import  Subscriptions  from "./components/Subscriptions"
 
 const ContributorRoutes = () => useRoutes([
