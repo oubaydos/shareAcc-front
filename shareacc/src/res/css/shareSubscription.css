@@ -172,7 +172,6 @@ li .select-valid svg {
 }
 .btn-greenn {
     text-decoration: none !important;
-    width: 132px;
     border-radius: 100px;
     padding: 10px 4px 14px;
     border: 2px solid #006D77;
@@ -211,4 +210,8 @@ li .select-valid svg {
 }
 .inline-block {
     display: inline-block;
+}
+
+.card-elements{
+    font-size: 30px;
 }

@@ -23,7 +23,7 @@ const fetchOffers = (pageNumber,provider,setOffers) =>{
         },
         (err)=>{
             console.error("error in getting offers")
-            return;
+
         }
     );
 }
@@ -41,7 +41,24 @@ export function saveOffer(paymentId, serviceName, planChoice){
         },
         (err)=>{
             console.error("error in getting offers")
-            return;
+
+        }
+    );
+}
+export function getOffer(offerId,setOffer){
+    axios.get(`${FETCH_OFFERS_API_URL}/${offerId}`,  {
+        headers: {
+            'Authorization': getCookie("Authorization"),
+        }
+    }).then(
+        (res) => {
+            console.log(res.data)
+            setOffer(res.data);
+        },
+        (err)=>{
+            console.error("error in getting offers")
+            alert("error in getting offer")
+
         }
     );
 }

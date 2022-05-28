@@ -1,10 +1,24 @@
 
 import "../../res/css/shareSubscription.css";
-import React from "react"
+import React, {useState} from "react"
 import TempCagnote from "./Cagnote";
 import Box from "@mui/material/Box";
+import {useParams} from "react-router-dom";
+import SubscribeCard from "./SubscribeCard";
+import Stripe from "./Stripe"
 
 const ShareSubscription = () => {
+    let {offerId} = useParams();
+    const [offer,setOffer] = useState({
+        offerer:"loading",
+        provider:"loading",
+        subsciptionType:"loading",
+        price:"loading"
+    })
+    // useEffect(()=>{
+    //     getOffer(offerId,setOffer);
+    // },[])
+
     return (
         <React.Fragment>
             <div className="register-steps text-center">
@@ -19,21 +33,13 @@ const ShareSubscription = () => {
                         You will be connected only when the owner has accepted your request.
                     </p>{" "}
                     {/*TODO integrate hamza's card*/}
+                    <SubscribeCard offer={offer}/>
                     <Box textAlign={"center"}>
                         <TempCagnote/>
                     </Box>
 
                     <div className="add-abo-suggest">
-                        {/*<p className="no-name-subscribe">*/}
-                        {/*    You will be connected only when the owner has accepted your request.*/}
-                        {/*</p>{" "}*/}
-
-                            <div
-                                data-modal="suggest-service"
-                                className="btn-greenn inline-block btn-suggest modal-trigger"
-                            >
-                                <div onClick={()=>{alert("clicked")}} style={{color:"#000000"}}>Purchase Now</div>
-                            </div>
+                        <Stripe/>
                     </div>
                 </section>
             </div>

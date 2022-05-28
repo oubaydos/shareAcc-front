@@ -45,6 +45,7 @@ const Cagnote = () => {
                                         type="text"
                                         maxLength="4"
                                         value={count}
+                                        style={{backgroundColor:"#006D77"}}
                                         readOnly=""
                                         name="amount"
                                         required="required"
