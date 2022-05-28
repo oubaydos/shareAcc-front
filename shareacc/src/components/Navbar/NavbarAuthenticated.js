@@ -78,8 +78,11 @@ const NavbarAuthenticated = () => {
     <AppBar position="absolute" className="nav-bar" color="common" variant="white">
       <Container maxWidth="xl" >
         <Toolbar disableGutters>
+          <span style={{cursor:"pointer"}} onClick={()=>goto('/')}>
           {logoView}
-          <Typography
+            </span>
+          <Typography style={{cursor:"pointer"}}
+              onClick={()=>goto('/')}
             color="primary"
             variant="h6"
             noWrap

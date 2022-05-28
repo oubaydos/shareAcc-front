@@ -10,6 +10,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import logo from '../../res/images/shareacc_logo.svg';
+import {goto} from "../../utils/utils";
 
 
 const pages = ["Services", "Why Join?"];
@@ -106,8 +107,10 @@ const logoView = <img src={logo} alt="logo" height="24" width="24" style={{font:
             alignItems="center"
             justifyContent="center"
           >
-               {logoView}
-              <Typography sx={{mx:2}} color='primary'>
+               <span style={{cursor:"pointer"}} onClick={()=>goto('/')}>
+          {logoView}
+            </span>
+              <Typography style={{cursor:"pointer"}} sx={{mx:2}} color='primary'>
                 {appName}
               </Typography>
           </Box>

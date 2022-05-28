@@ -13,12 +13,16 @@ import OfferCard from "./components/Offer/OfferCard";
 import OfferOrSubscribe from "./components/Offer/offerOrSubscribe";
 import  Subscriptions  from "./components/Subscriptions"
 import OfferDetails from "./components/Offer/OfferDetails";
+import Subscribe from "./components/subscribe/Subscribe";
+import TempCagnote from "./components/subscribe/Cagnote";
 
 const ContributorRoutes = () => useRoutes([
     { path: "/", element: <Home /> },
     {path: "/subscription/new", element: <ShareSubscription/>},
     {path: "/subscription/new/:id/plans", element: <ChoosePlan />},
-    {path: "/subscription/new/:id/:planChoice/credentials", element: <OfferDetails/>}
+    {path: "/subscription/new/:id/:planChoice/credentials", element: <OfferDetails/>},
+    {path: "/offer/:offerId/subscribe", element: <Subscribe/>},
+    {path: "/temp", element: <TempCagnote/>},
 ]);
 const GuestRoutes = () =>
   useRoutes([
@@ -52,7 +56,7 @@ const getNavbar = (role)=>{
   console.log(role);
   if(role==="ADMIN" || role==="CONTRIBUTOR") return <NavbarAuthenticated/>
   else if (role==="GUEST") return <NavbarUnauthenticated/>
-  return <div></div>
+  return <div/>
 
 }
 export {getRoutes,getNavbar};
