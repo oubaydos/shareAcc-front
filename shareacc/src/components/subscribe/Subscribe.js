@@ -39,7 +39,7 @@ const ShareSubscription = () => {
                     </Box>
 
                     <div className="add-abo-suggest">
-                        <Stripe/>
+                        <Stripe amount={offer.price} />
                     </div>
                 </section>
             </div>

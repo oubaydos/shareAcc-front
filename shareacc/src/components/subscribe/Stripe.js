@@ -9,6 +9,9 @@ import {
     useElements,
 } from '@stripe/react-stripe-js';
 import CreditCardIcon from "@mui/icons-material/CreditCard";
+import StripeCheckout from 'react-stripe-checkout';
+import {onToken} from "../../api/paymentApi";
+import {useParams} from "react-router-dom";
 
 const CheckoutForm = () => {
     const stripe = useStripe();
@@ -58,7 +61,6 @@ const CheckoutForm = () => {
                 disabled={!stripe || !elements}
                 data-modal="suggest-service"
                 className="btn-greenn inline-block btn-suggest modal-trigger"
-                onClick={()=>{alert("clicked")}}
             >
 
                 <div  style={{color:"#000000"}}>
@@ -66,17 +68,33 @@ const CheckoutForm = () => {
                 </div>
             </button>
 
+
         </form>
     );
 };
 
 const stripePromise = loadStripe('pk_test_6pRNASCoBOKtIshFeQd4XMUh');
 
-export default function App() {
+export default function App(props) {
+    let {offerId}=useParams();
     return (
-        <Elements stripe={stripePromise}>
-            <CheckoutForm/>
-        </Elements>
+            <StripeCheckout
+                token={(token)=>onToken(token,props.amount,offerId)}
+                stripeKey="pk_test_51KwpGwA1aNNHUg8qSbr6XZo4dTWuHtixENN5DqdyuryGDeOkZHq0945EgQhEP0zNYgRFIidKTSnZxurTKrtJENK600FhVAgduE"
+                amount={props.amount}
+                currency="USD"
+                zipCode={false}
+            >
+                <button
+                    data-modal="suggest-service"
+                    className="btn-greenn inline-block btn-suggest modal-trigger"
+                >
+
+                    <div  style={{color:"#000000"}}>
+                        <CreditCardIcon style={{marginBottom:"-7px"}}/> Purchase Now
+                    </div>
+                </button>
+            </StripeCheckout>
     );
 }
 
